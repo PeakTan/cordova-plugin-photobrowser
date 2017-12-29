@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin 
+id="cordova-plugin-photobrowser" 
+version="0.0.1" 
+xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>PhotoBrowser</name>
+    <js-module name="PhotoBrowser" src="www/PhotoBrowser.js">
+        <clobbers target="cordova.plugins.PhotoBrowser" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PhotoBrowser">
+                <param name="android-package" value="cordova-plugin-photobrowser.PhotoBrowser" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/PhotoBrowser.java" target-dir="src/cordova-plugin-photobrowser/PhotoBrowser" />
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="PhotoBrowser">
+                <param name="ios-package" value="PhotoBrowser" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PhotoBrowser.m" />
+
+        <!-- SDWebImage -->
+        <header-file src="src/ios/SDWebImage/NSData+ImageContentType.h" />
+        <source-file src="src/ios/SDWebImage/NSData+ImageContentType.m" />
+
+        <header-file src="src/ios/SDWebImage/NSImage+WebCache.h" />
+        <source-file src="src/ios/SDWebImage/NSImage+WebCache.m" />
+
+        <header-file src="src/ios/SDWebImage/SDImageCache.h" />
+        <source-file src="src/ios/SDWebImage/SDImageCache.m" />
+
+        <header-file src="src/ios/SDWebImage/SDImageCacheConfig.h" />
+        <source-file src="src/ios/SDWebImage/SDImageCacheConfig.m" />
+
+        <header-file src="src/ios/SDWebImage/SDWebImageCompat.h" />
+        <source-file src="src/ios/SDWebImage/SDWebImageCompat.m" />
+
+        <header-file src="src/ios/SDWebImage/SDWebImageDecoder.h" />
+        <source-file src="src/ios/SDWebImage/SDWebImageDecoder.m" />
+
+        <header-file src="src/ios/SDWebImage/SDWebImageDownloader.h" />
+        <source-file src="src/ios/SDWebImage/SDWebImageDownloader.m" />
+
+        <header-file src="src/ios/SDWebImage/SDWebImageDownloaderOperation.h" />
+        <source-file src="src/ios/SDWebImage/SDWebImageDownloaderOperation.m" />
+
+        <header-file src="src/ios/SDWebImage/SDWebImageManager.h" />
+        <source-file src="src/ios/SDWebImage/SDWebImageManager.m" />
+
+        <header-file src="src/ios/SDWebImage/SDWebImageOperation.h" />
+
+        <header-file src="src/ios/SDWebImage/SDWebImagePrefetcher.h" />
+        <source-file src="src/ios/SDWebImage/SDWebImagePrefetcher.m" />
+
+        <header-file src="src/ios/SDWebImage/UIButton+WebCache.h" />
+        <source-file src="src/ios/SDWebImage/UIButton+WebCache.m" />
+
+        <header-file src="src/ios/SDWebImage/UIImage+GIF.h" />
+        <source-file src="src/ios/SDWebImage/UIImage+GIF.m" />
+
+        <header-file src="src/ios/SDWebImage/UIImage+MultiFormat.h" />
+        <source-file src="src/ios/SDWebImage/UIImage+MultiFormat.m" />
+
+        <header-file src="src/ios/SDWebImage/UIImageView+HighlightedWebCache.h" />
+        <source-file src="src/ios/SDWebImage/UIImageView+HighlightedWebCache.m" />
+
+        <header-file src="src/ios/SDWebImage/UIImageView+WebCache.h" />
+        <source-file src="src/ios/SDWebImage/UIImageView+WebCache.m" />
+
+        <header-file src="src/ios/SDWebImage/UIView+WebCache.h" />
+        <source-file src="src/ios/SDWebImage/UIView+WebCache.m" />
+        
+        <header-file src="src/ios/SDWebImage/UIView+WebCacheOperation.h" />
+        <source-file src="src/ios/SDWebImage/UIView+WebCacheOperation.m" />
+
+        <!-- XLPhotoBrowser+CorderXL -->
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/UIImage+XLExtension.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/UIImage+XLExtension.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/UIView+XLExtension.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/UIView+XLExtension.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/XLPhotoBrowser.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/XLPhotoBrowser.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/XLPhotoBrowserConfig.h" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/XLPhotoBrowserTypeDefine.h" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/XLProgressView.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/XLProgressView.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/XLZoomingScrollView.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/XLZoomingScrollView.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheet.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheet.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetCell.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetCell.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetConfig.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetConfig.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetItem.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetItem.m" />
+
+        <resource-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetResources/FSActionSheet_cancel@2x.png" />
+        <resource-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/FSActionSheet/FSActionSheetResources/FSActionSheet_cancel@3x.png" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TAAbstractDotView.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TAAbstractDotView.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TAAnimatedDotView.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TAAnimatedDotView.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TADotView.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TADotView.m" />
+
+        <header-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TAPageControl.h" />
+        <source-file src="src/ios/XLPhotoBrowser+CoderXL/Vender/PageControl/TAPageControl.m" />
+
+    </platform>
+</plugin>

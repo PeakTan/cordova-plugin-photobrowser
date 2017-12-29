@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-photobrowser",
+  "version": "0.0.1",
+  "description": "一个图片浏览插件",
+  "main": "PhotoBrowser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wythetan",
+  "license": "ISC"
+}
