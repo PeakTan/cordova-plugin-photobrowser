@@ -1,12 +1,15 @@
 # cordova-plugin-photobrowser
 Cordova 图片浏览插件
 一款原生图片浏览插件，支持iOS、Android
+
 # 效果图
 <img src="https://github.com/gaofengtan/cordova-plugin-photobrowser/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.PNG" width = "200" alt="效果图" />
+
 # 安装
 ```
 cordova plugin add https://github.com/gaofengtan/cordova-plugin-photobrowser
 ```
+
 # 使用
 ```
 declare var cordova: any;
