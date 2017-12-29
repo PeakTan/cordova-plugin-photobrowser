@@ -15,6 +15,6 @@ cordova.plugins.PhotoBrowser.show(imageUrls, index);
 
 params
 - imageUrls：图片地址集合
-- 当前需要查看的位置
+- index：当前需要查看的位置
 ```
 
