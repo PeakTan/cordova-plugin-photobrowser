@@ -2,7 +2,7 @@
 Cordova 图片浏览插件
 一款原生图片浏览插件，支持iOS、Android
 # 效果图
-https://github.com/gaofengtan/cordova-plugin-photobrowser/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.PNG
+![效果图](https://github.com/gaofengtan/cordova-plugin-photobrowser/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.PNG)
 # 安装
 ```
 cordova plugin add https://github.com/gaofengtan/cordova-plugin-photobrowser
